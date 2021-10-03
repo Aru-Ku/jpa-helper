@@ -47,7 +47,7 @@ export const generateEntity = (schemaName, tableName, primaryKey, columns, gener
         const [colName, varType] = column.split(/[ ,\t]+/);
         if(Boolean(colName)) {
             if(colName === primaryKey) code += getId();
-            if(colName === primaryKey) code += getGeneratedKey();
+            if(colName === generatedKey) code += getGeneratedKey();
             code += getColumnBlock(colName, chooseVarType(varType), convertToCamelCase(colName));
         }
     })
