@@ -1,5 +1,4 @@
 <script>
-    import "carbon-components-svelte/css/g90.css";
     import { Header, HeaderNav, HeaderNavItem, SkipToContent } from "carbon-components-svelte";
 </script>
 
